@@ -50,7 +50,7 @@ DIST_FILES = [
     ]
 
 def build():
-    doc()
+    #doc()
     exe()
 
 def exe():
@@ -68,7 +68,7 @@ def exe():
         os.chdir("dist")
         createZip( "pyauto.zip", DIST_FILES )
         os.chdir("..")
-    
+
     fd = open("dist/pyauto.zip","rb")
     m = hashlib.md5()
     while 1:
